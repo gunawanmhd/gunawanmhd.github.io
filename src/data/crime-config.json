@@ -1,0 +1,208 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [
+        {
+          "dataId": "my_data",
+          "id": "ctrbil4s8",
+          "name": "timestamp",
+          "type": "timeRange",
+          "value": [
+            1388772600000,
+            1420005292000
+          ],
+          "enlarged": true,
+          "plotType": "histogram",
+          "yAxis": null
+        }
+      ],
+      "layers": [
+        {
+          "id": "g117hop",
+          "type": "point",
+          "config": {
+            "dataId": "my_data",
+            "label": "Crime",
+            "color": [
+              23,
+              184,
+              190,
+              255
+            ],
+            "columns": {
+              "lat": "Y",
+              "lng": "X",
+              "altitude": null
+            },
+            "isVisible": true,
+            "visConfig": {
+              "radius": 18.4,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "colorRange": {
+                "name": "Uber Viz Diverging 0",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#FEEEE8",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                0,
+                50
+              ],
+              "hi-precision": false
+            },
+            "textLabel": {
+              "field": null,
+              "color": [
+                255,
+                255,
+                255,
+                255
+              ],
+              "size": 50,
+              "offset": [
+                0,
+                0
+              ],
+              "anchor": "middle"
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "kejahatan",
+              "type": "string"
+            },
+            "colorScale": "ordinal",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "wpm6fds",
+          "type": "hexagon",
+          "config": {
+            "dataId": "my_data",
+            "label": "Crime 3D Count",
+            "color": [
+              221,
+              178,
+              124
+            ],
+            "columns": {
+              "lat": "Y",
+              "lng": "X"
+            },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.7,
+              "worldUnitSize": 1.01,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer Set1-3",
+                "type": "qualitative",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#e41a1c",
+                  "#377eb8",
+                  "#4daf4a"
+                ],
+                "reversed": false
+              },
+              "coverage": 1,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 50.2,
+              "hi-precision": false,
+              "colorAggregation": "mode",
+              "sizeAggregation": "count",
+              "enable3d": true
+            },
+            "textLabel": {
+              "field": null,
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "size": 50,
+              "offset": [
+                0,
+                0
+              ],
+              "anchor": "middle"
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "kejahatan",
+              "type": "string"
+            },
+            "colorScale": "ordinal",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "my_data": [
+              "id",
+              "username",
+              "date",
+              "time",
+              "date_time"
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 0.5,
+          "enabled": false
+        }
+      },
+      "layerBlending": "subtractive",
+      "splitMaps": []
+    },
+    "mapState": {
+      "bearing": 0,
+      "dragRotate": false,
+      "latitude": -6.250986765121764,
+      "longitude": 106.78026555496173,
+      "pitch": 0,
+      "zoom": 10.240327380036824,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {},
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": false,
+        "building": true,
+        "water": true,
+        "land": true
+      },
+      "mapStyles": {}
+    }
+  }
+}
